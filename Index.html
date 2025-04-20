@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online | Nama Toko</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #ffffff;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 150px; /* Ukuran logo 150x50px */
+            height: auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            height: 600px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 5%;
+        }
+
+        /* Ukuran gambar hero: 1200x600px */
+        
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Produk Unggulan */
+        .products {
+            padding: 4rem 5%;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px; /* Ukuran gambar produk 400x250px */
+            object-fit: cover;
+        }
+
+        /* Promo Section */
+        .promo-banner {
+            margin: 2rem 5%;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .promo-banner img {
+            width: 100%;
+            height: 300px; /* Ukuran banner promo 1200x300px */
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 5%;
+            margin-top: 4rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                height: 400px;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Nama Toko">
+            </div>
+            <div class="nav-links">
+                <a href="#produk">Produk</a>
+                <a href="#promo">Promo</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di Toko Online Kami</h1>
+            <p>Dapatkan produk terbaik dengan harga spesial</p>
+            <a href="#produk" class="cta-button">Belanja Sekarang</a>
+        </div>
+    </section>
+
+    <section class="products" id="produk">
+        <h2>Produk Unggulan</h2>
+        <div class="product-grid">
+            <!-- Contoh produk -->
+            <div class="product-card">
+                <img src="produk1.jpg" alt="Nama Produk" loading="lazy">
+                <div class="product-info">
+                    <h3>Nama Produk</h3>
+                    <p>Rp 299.000</p>
+                </div>
+            </div>
+            <!-- Tambahkan lebih banyak produk -->
+        </div>
+    </section>
+
+    <section class="promo-banner">
+        <img src="promo-banner.jpg" alt="Promo Spesial">
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Hubungi Kami</h3>
+            <p>Email: info@tokokami.com</p>
+            <p>Telepon: (021) 1234-5678</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+      </html>
