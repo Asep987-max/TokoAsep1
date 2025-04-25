@@ -1,50 +1,7 @@
 /* style.css */
 body {
+    background-color: red !important;
     font-family: 'Inter', sans-serif;
-    background-color: #f3f4f6 !important;
-    margin: 0;
-    padding: 0;
 }
 
-/* Scroll reveal */
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out !important;
-}
-
-.reveal.active {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-
-/* Dialog box */
-.dialog-box {
-    background-color: white !important;
-    border-radius: 0.5rem !important;
-    padding: 1rem !important;
-    position: relative !important;
-    min-height: 120px;
-    margin-bottom: 1rem;
-    overflow: visible !important; /* Penting! */
-}
-
-/* Karakter */
-.character {
-    position: absolute;
-    left: 1rem;
-    bottom: 10px; /* Jangan 0 */
-    height: 6rem !important;
-    z-index: 999 !important;
-}
-
-/* Nonaktifkan animasi sementara */
-/* @keyframes talk { ... } */
-
-/* Opsi button */
-.option-button {
-    background-color: #e0f2fe !important;
-    color: #065f46 !important;
-    padding: 0.5rem 1rem !important;
-    margin: 4px !important;
-}
+/* Hapus sementara semua kode CSS lain */
