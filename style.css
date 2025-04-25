@@ -1,7 +1,13 @@
 /* style.css */
-body {
-    background-color: red !important;
-    font-family: 'Inter', sans-serif;
-}
-
-/* Hapus sementara semua kode CSS lain */
+   body {
+       background: red !important;
+   }
+   .dialog-box {
+       background: yellow !important;
+       min-height: 200px !important;
+   }
+   .character {
+       background: blue !important; /* Ganti gambar dengan warna */
+       width: 100px !important;
+       height: 100px !important;
+   }
